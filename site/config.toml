@@ -1,5 +1,6 @@
 baseurl = "https://yuzu-emu.org/"
 languageCode = "en-us"
+rssURI = "index.xml"
 
 DefaultContentLanguage = "en"
 theme = "shared-bulma-theme"
@@ -72,6 +73,11 @@ paginate = 20
 [outputs]
 home = [ "HTML", "RSS" ]
 section = [ "HTML" ]
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss"
+    baseName = "index"
 
 [markup]
   [markup.goldmark]
